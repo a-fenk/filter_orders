@@ -81,6 +81,7 @@ def add_key_sheet(workbook, keys_chunks: dict):
         sheet['B1'].value = 'Уникальных слов'
         sheet['C1'].value = 'Всего слов'
         sheet['D1'].value = 'Кол-во фраз'
+        sheet['E1'].value = '% качество'
 
     row = 2
 
@@ -88,6 +89,7 @@ def add_key_sheet(workbook, keys_chunks: dict):
         sheet[f'B{row}'].value = key_row.max_unique_words
         sheet[f'C{row}'].value = len(tokenize(key_row.value))
         sheet[f'D{row}'].value = len(keys_chunks[key_row])
+        sheet[f'E{row}'].value = f'=ROUND($B{row}/$C{row} * 100)'
 
         for key in keys_chunks[key_row]:
             sheet[f'A{str(row)}'].value = key
