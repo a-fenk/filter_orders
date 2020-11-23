@@ -1,0 +1,8 @@
+click==7.1.2
+et-xmlfile==1.0.1
+jdcal==1.4.1
+joblib==0.17.0
+nltk==3.5
+openpyxl==3.0.5
+regex==2020.10.28
+tqdm==4.51.0
