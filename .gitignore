@@ -1,4 +1,7 @@
 /venv/
 /check.xlsx
-.idea
+/.idea
 /result.txt
+/.~lock.result.xlsx#
+/.DS_Store
+/__pycache__
